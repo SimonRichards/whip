@@ -1,0 +1,12 @@
+<div ng-controller="BranchCtrl">
+  <h2>{{name}}</h2>
+  <ul>
+    <li ng-repeat="repo in repositories">
+      {{repo.name}}
+    </li>
+  </ul>
+  <input
+    type="text"
+    ng-pattern="\w+"
+    />
+</div>

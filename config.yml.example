@@ -1,0 +1,6 @@
+repositories:
+  - name : Test
+    repo_path : test
+    teamcity_url : http://teamcity.jetbrains.com/
+    teamcity_project : Scala
+    teamcity_vcs : Scala trunk
