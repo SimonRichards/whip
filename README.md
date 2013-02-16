@@ -5,6 +5,7 @@ build and test before merging and pushing the results.
 
 ## Usage
 
-'hg' must be on the path
-$gem install sinatra json
-./whip.rb
+hg must be on the path.
+```bash
+gem install sinatra json && ./whip.rb
+```
