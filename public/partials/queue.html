@@ -1,12 +1,26 @@
-<div ng-controller="BranchCtrl">
-  <h2>{{name}}</h2>
-  <ul>
-    <li ng-repeat="repo in repositories">
-      {{repo.name}}
-    </li>
-  </ul>
-  <input
-    type="text"
-    ng-pattern="\w+"
-    />
+<div class="grid-container">
+  <div class="grid-70 prefix-15 suffix-15">
+    <div class="content grid-100">
+      <h1>
+        Whip
+      </h1>
+    </div>
+    <div class="content grid-100" ng-controller="RepositoryControl">
+      <h2>{{name}}</h2>
+      <ul>
+        <li ng-repeat="repo in repositories">
+          <ul>
+            <li ng-repeat="branch in getBuildingBranches(repo)">
+              {{branch.name}}
+            </li>
+          </ul>
+          {{repo.name}}
+        </li>
+      </ul>
+      <input
+        type="text"
+        ng-pattern="\w+"
+        />
+    </div>
+  </div>
 </div>

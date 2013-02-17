@@ -1,0 +1,56 @@
+body {
+    background-color: #081017;
+}
+
+.content {
+    background-color: #103028;
+    margin-bottom: 1em;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Share Tech Mono', sans-serif;
+    font-size: 65pt;
+    color: #E2E3AB;
+}
+
+.merged {
+    background-color: #133930;
+}
+
+.testing {
+    background-color: #956532;
+}
+
+.failed {
+    background-color: #6B2B24;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
